@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodney Roque</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="logo"><span class="nome">Rodney </span><span class="sobrenome">Roque</span></div>
+        <nav class="sessões">
+            <a href="home.html">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#languages">Linguagens</a>
+            <a href="#contact"><button>Contato</button></a>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <a href="home.html">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#languages">Linguagens</a>
+                <a href="#contact"><button>Contato</button></a>
+            </ul>
+        </div>
+        <button class="botao-menu" onclick="menuShow()"><img class="menu" src="Images/menu.png"></button>
+    </header><!--HEADER/CABEÇALHO DO SITE-->
+
+    <section id="home" class="corpo">
+        <div class="texto-corpo">
+            <h1>Hello! I'm Rodney</h1>
+            <h2 class="digitando">Desenvolvedor de Software</h2>
+            <p>Sou estudante de ciência da computação pela UNIP - Universidade Paulista,
+                buscando a cada dia me tornar um profissional melhor, fazendo minhas atividades
+                com excelência.
+            </p>
+            <div class="botoes">
+                <a href="https://github.com/RodneyRoque" target="_blank"><button class="btnGitHub"><i class="fa fa-github" aria-hidden="true"> GitHub</i></button></a>
+                <a href="https://www.linkedin.com/in/rodneyroque/" target="_blank"><button class="btnGitHub"><i class="fa fa-linkedin-square" aria-hidden="true"> LinkedIn</i></button></a>
+            </div>
+        </div>
+        <div class="imagem">
+            
+        </div>
+    </section><!--SESSÃO DO CORPO DO SITE-->
+
+    <section id="about" class="sobre">
+    <article class="init-hidden">
+        <h1>Sobre Mim</h1>
+        <p>Desde criança sou apaixonado pela área da computação, comecei a usar o windows desde cedo,
+            sempre explorando suas funcionalidades ao mesmo tempo que me divertia jogando (algo que me ajudou muito a
+            desenvolver o meu inglês, antes de fazer um curso de 2 anos no Cebrac).
+        </p>
+        <p>No final do ano de 2020, descobri o poder da programação e me apaixonei pela área de desenvolvimento. Comecei então
+            estudos leves, sem compromisso, até terminar o terceiro ano em 2021. Em 2022 comecei a faculdade de Ciência da computação
+            pela UNIP - Universidade Paulista e desde então me aprofundei cada dia mais na área.
+        </p>
+        <a href="none.html" target="_blank"><button class="btnGitHub"><i class="fa fa-book" aria-hidden="true"> Download CV</i></button></a>
+    </article>
+    </section><!--SESSÃO SOBRE-->
+
+    <section id="languages" class="linguagens">
+    <article class="init-hidden">
+        <h1>Linguagens</h1>
+        <div class="img-linguagens">
+            <img class="img-maior" src="Images/html-css-js.png">
+            <img class="img-menor" src="Images/python.png">
+            <img class="img-menor" src="Images/java.png">
+            <img class="img-menor" src="Images/mysql.png">
+        </div>
+        <p>Iniciei meus estudos pelas linguagens de marcação e estilização básicas de web, 
+            HTML e CSS, dando uma explorada também no JavaScript. Desde que iniciei meus 
+            estudos na faculdade, tive contato com as linguagens de programação: Python, 
+            Java, além do uso do MySql como SGBD para a criação de bancos de dados.
+        </p>
+    </article>
+    </section><!--SESSÃO LINGUAGENS-->
+
+    <section id="contact" class="contato">
+    <article class="init-hidden">
+        <h2>Formulário de Contato</h2>
+        <form class="formulario" action="https://formsubmit.co/rodneyroque@hotmail.com" method="POST">
+            <label>Nome:</label>
+            <input type="text" name="name" placeholder="Digite o seu nome: " required>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Digite o seu e-mail: " required>
+            <label>Assunto:</label>
+            <textarea name="message" required></textarea>
+            <button type="submit">Enviar</button>
+       </form>
+    </article>
+    </section><!--SESSÃO CONTATO-->
+
+    <footer class="rodape">
+        <p>Esse site foi desenvolvido para uso pessoal por Rodney Roque e está em constante atualização, juntamente com
+            a evolução pessoal das habilidades do mesmo
+        </p>
+        <p>Copyright © 2023 Rodney Roque</p>
+    </footer><!--RODAPÉ-->
+    <script type="text/JavaScript" src="script.js"></script>
+</body>
+</html>

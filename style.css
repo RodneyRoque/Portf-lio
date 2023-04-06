@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.init-hidden{
+    opacity: 0;
+    transition: 1s;
+}
+
+.init-hidden-off{
+    opacity: 1;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: rgb(20, 20, 20);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(98, 0, 255);
+    border-radius: 20px;
+}
+
+/*SESSÃO DO CABEÇALHO*/
+.cabeçalho{
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 20px 20px 20px 20px black;
+}
+
+.logo{
+    font-size: 45px;
+}
+
+.nome{
+    font-family: 'Alkatra', cursive;
+    color: rgb(98, 0, 255);
+}
+
+.sobrenome{
+    font-family: 'Alkatra', cursive;
+    color: rgb(255, 255, 255);
+}
+
+.sessões{
+    font-size: 26px;
+    display: flex;
+    gap: 50px;
+}
+
+.sessões a{
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.sessões a:hover{
+    color: rgb(98, 0, 255);
+    scale: 1.2;
+}
+
+.sessões button{
+    font-size: 29px;
+    background-color: rgb(98, 0, 255);
+    border-radius: 15px;
+    width: 180px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    border: 0;
+}
+
+.sessões button:hover{
+    background-color: rgb(68, 0, 179);
+}
+
+/*MOBILE-MENU*/
+    .botao-menu{
+        display: none;
+        border: 0;
+        background-color: rgba(240, 248, 255, 0);
+    }
+
+    .mobile-menu{
+        display: none;
+        position: absolute;
+        top: 6.5vh;
+        right: 0;
+        width: 100%;
+        height: 92vh;
+        background-color: rgb(20,20,20);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 1;
+    }
+
+    .mobile-menu a{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 35px;
+        margin-top: 100px;
+        opacity: 0;
+    }
+
+    .mobile-menu button{
+        font-size: 35px;
+        background-color: rgb(98, 0, 255);
+        border-radius: 5px;
+        width: 250px;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        border: 0;
+        margin: 0 auto;
+        opacity: 0;
+    }
+
+/*SESSÃO DO CORPO*/
+.corpo{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 47%, rgba(68,0,179,1) 100%);
+    color: white;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    animation: inicializar .7s forwards;
+}
+
+.texto-corpo{
+    font-size: 25px;
+    margin-top: 10%;
+    margin-left: 7vw;
+    width: 40%; 
+}
+
+.texto-corpo h1{
+    margin-bottom: 35px;
+    color:rgb(98, 0, 255);
+}
+
+.texto-corpo p{
+    margin-top: 15px;
+    color: rgb(230, 230, 230);
+}
+
+.botoes{
+    display: flex;
+    gap: 3vw;
+}
+
+.btnGitHub{
+    font-size: 29px;
+    background-color: rgba(98, 0, 255, 0);
+    border: 1px solid rgb(98, 0, 255);
+    border-radius: 5px;
+    width: 280px;
+    height: 60px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    margin-top: 7vh;
+}
+
+.btnGitHub:hover{
+    background-color: rgb(68, 0, 179);
+}
+
+.imagem{
+    border: 2px solid rgb(98, 0, 255);
+    width: 40vw;
+    height: 60vh;
+    margin-top: 10vh;
+    border-radius: 60px;
+    background-image: url(Images/Foto\ linkedIn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagem img{
+    border-radius: 54.1px;
+}
+
+/*SESSÃO SOBRE*/
+.sobre{
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    color: rgb(230, 230, 230);
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+.sobre h1{
+    padding-top: 10vh;
+    color: rgb(98, 0, 255);
+}
+
+.sobre p{
+    width: 60%;
+    margin: 10px auto;
+}
+
+/*SESSÃO HABILIDADES*/
+.linguagens{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg,rgba(68,0,179,1), rgba(0,0,0,1) 60% 100%);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.linguagens h1{
+    font-size: 39px;
+    color: rgb(98, 0, 255);
+    text-align: center;
+    padding-top: 2vh;
+    font-family: 'Alkatra', cursive;
+    font-size: 50px;
+}
+
+.linguagens p{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    width: 60%;
+    margin: 0 auto;
+}
+
+.img-linguagens{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10vh;
+    padding-bottom: 4vh;
+}
+
+.img-maior{
+    width: 17%;
+    height: 17%;
+}
+
+.img-menor{
+    width: 7%;
+}
+
+/*SESSÃO CONTATO*/
+.contato{
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+}
+
+.contato h2{
+    font-size: 55px;
+    color: rgb(98, 0, 255);
+    font-family: 'Alkatra', cursive;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+    gap: 20px;
+    border: 2px solid rgb(98, 0, 255);
+    padding: 20px;
+}
+
+.formulario label{
+    color: rgb(255,255,255);
+    text-align: left;
+    margin-bottom: -1vh;
+}
+
+.formulario input{
+    height: 4vh;
+    font-size: 22px;
+    outline: 0;
+}
+
+.formulario textarea{
+    outline: 0;
+    height: 10vh;
+    resize: none;
+    font-size: 13px;
+}
+
+.formulario button{
+    width: 50%;
+    margin-top: 10px;
+    height: 5vh;
+    font-size: 25px;
+    margin: 0 auto;
+    background-color: rgb(98, 0, 255);
+    color: rgb(255,255,255);
+    cursor: pointer;
+    transition: 0.5s;
+    border: 0;
+}
+
+.formulario button:hover{
+    background-color: rgb(68, 0, 179)
+}
+
+/*SESSÃO FOOTER*/
+.rodape{
+    border-top: 0.1px solid rgb(160, 160, 160);
+    background-color: rgb(20, 20, 20);
+    color: rgb(189, 185, 185);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.rodape p{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 40%;
+}
+
+/*RESPONSIVIDADE DO SITE*/
+@media screen and (max-width:1630px){
+    .texto-corpo{
+        margin-left: 2%;
+    }
+
+    .imagem{
+        margin-left: 8%;
+    }
+}
+
+
+@media screen and (max-width:1360px){
+    .corpo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10vh;
+    }
+
+    .btnGitHub{
+        margin-top: 2vh;
+        height: 50px;
+        width: 250px;
+        font-size: 25px;
+    }
+
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .texto-corpo{
+        font-size: 20px;
+        margin: 6vh auto;
+    }
+
+    .texto-corpo h1{
+        margin-bottom: 2px;
+    }
+
+    .imagem{
+        width: 30%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:990px){
+    .cabeçalho{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logo{
+        margin-left: 3vw;
+        font-size: 35px;
+    }
+
+    .sessões{
+        display: none;
+    }
+
+    .texto-corpo{
+        font-size: 17px;
+        width: 50%;
+    }
+
+    .texto-corpo h1{
+        margin-bottom: 2px;
+    }
+
+    .imagem{
+        border-width: 2px;
+        border-radius: 0;
+        width: 300px;
+        height: 300px;
+    }
+
+    .btnGitHub{
+        width: 150px;
+        font-size: 20px;
+    }
+
+    .sobre{
+        font-size: 17px;
+    }
+
+    .linguagens h1{
+        font-size: 25px;
+    }
+
+    .linguagens p{
+        font-size: 17px;
+    }
+
+    .formulario{
+        width: 80%;
+    }
+
+    .formulario input{
+        font-size: 13px;
+    }
+
+    .rodape p{
+        width: 60%;
+        font-size: 12px;
+    }
+
+    .menu{
+        display: block;
+        width: 50px;
+    }
+    
+    .botao-menu{
+        display: block;
+    }
+
+    .mobile-menu{
+        display: none;
+    }
+
+    .mobile-menu a{
+        opacity: 1;
+    }
+
+    .mobile-menu button{
+        opacity: 1;
+    }
+
+    .open{
+        display: block;
+    }
+}
+
+
+/*ANIMAÇÕES*/
+@keyframes inicializar{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes piscar{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.digitando::after{
+    content: '|';
+    animation: piscar .7s infinite;
+}
+
+
+
