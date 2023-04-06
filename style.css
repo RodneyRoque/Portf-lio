@@ -465,6 +465,26 @@
     .open{
         display: block;
     }
+
+    .corpo{
+        height: 120vh;
+    }
+
+    .imagem{
+        height: 100vh;
+        width: 60vw;
+    }
+}
+
+@media screen and (max-height:750px){
+    .corpo{
+        height: 120vh;
+    }
+
+    .imagem{
+        height: 100vh;
+        width: 60vw;
+    }
 }
 
 
