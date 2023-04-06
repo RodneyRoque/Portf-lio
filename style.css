@@ -478,12 +478,12 @@
 
 @media screen and (max-height:750px){
     .corpo{
-        height: 120vh;
+        height:200vh;
     }
 
     .imagem{
-        height: 100vh;
-        width: 60vw;
+        height: 70vh;
+        width: 70vw;
     }
 }
 
