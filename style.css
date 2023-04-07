@@ -96,7 +96,7 @@
         top: 6.5vh;
         right: 0;
         width: 100%;
-        height: 92vh;
+        height: 105%;
         background-color: rgb(20,20,20);
         flex-direction: column;
         align-items: center;
@@ -375,7 +375,7 @@
     }
 
     .imagem{
-        width: 30%;
+        width: 35%;
         margin: 0 auto;
     }
 }
@@ -472,18 +472,41 @@
 
     .imagem{
         height: 100vh;
-        width: 60vw;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .texto-corpo{
+        width: 90%;
+    }
+
+    .sobre p{
+        width: 90%;
+        font-size: 15px;
+    }
+    
+    .linguagens p{
+        width: 90%;
+    }
+
+    .contato h2{
+        font-size: 32px;
     }
 }
 
 @media screen and (max-height:750px){
     .corpo{
-        height:200vh;
+        height:140vh;
     }
 
     .imagem{
-        height: 70vh;
-        width: 90vw;
+        height: 40%;
+        width: 100%;
+    }
+
+    .mobile-menu{
+        margin-top: 13px;
     }
 }
 
